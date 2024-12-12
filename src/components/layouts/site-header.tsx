@@ -30,9 +30,9 @@ export function SiteHeader() {
 
         <div></div>
       </section>
-      <div className="relative z-50 h-full text-red flex flex-col justify-end pb-36 mx-8 lg:pb-0 lg:justify-center lg:container lg:mx-auto">
-        <h1 className="text-6xl font-heading mb-8 flex flex-col lg:text-9xl">
-          <span className="inline-flex mb-4">
+      <div className="relative z-50 h-full text-red flex  flex-col justify-end pb-36 mx-8 lg:pb-0 lg:justify-center lg:container lg:mx-auto">
+        <h1 className="text-6xl font-heading mb-8 flex flex-col text-whitelg:text-9xl">
+          <span className="inline-flex mb-4 ">
             THE <Icons.first className="ml-4 lg:ml-8 lg:size-32 lg:-mt-2" />
           </span>
           <span>BUILDING</span>
