@@ -5,6 +5,7 @@ import {
   HomeIcon,
   ImageIcon,
   HamburgerMenuIcon,
+  GlobeIcon,
 } from "@radix-ui/react-icons";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
@@ -402,4 +403,5 @@ export const Icons = {
   settings: GearIcon,
   chevronLeft: ChevronLeftIcon,
   menu: HamburgerMenuIcon,
+  globe: GlobeIcon,
 };

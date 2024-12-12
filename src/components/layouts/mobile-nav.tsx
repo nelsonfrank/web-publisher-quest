@@ -30,7 +30,7 @@ export function MobileNav({ items }: MobileNavProps) {
   if (isDesktop) return null;
 
   return (
-    <div className="flex justify-between items-center w-full px-8">
+    <div className="flex justify-between items-center w-full mx-4">
       <Link href="/" className="items-center space-x-2 lg:hidden">
         <Icons.logo className="size-50" aria-hidden="true" />
         <span className="sr-only">Home</span>
