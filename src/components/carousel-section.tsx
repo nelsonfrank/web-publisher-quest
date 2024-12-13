@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useEffect, useState } from "react";
@@ -9,17 +10,16 @@ import {
   CarouselItem,
   type CarouselApi,
 } from "@/components/ui/carousel";
-import { Card, CardContent } from "./ui/card";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { Icons } from "./icons";
 import { Button } from "./ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { Progress } from "./ui/progress";
 import { cn } from "@/lib/utils";
 
 export const CarouselSection = () => {
   const [api, setApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(0);
+  const [, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
 
   const isDesktop = useMediaQuery("(min-width: 1024px)");
@@ -50,21 +50,6 @@ export const CarouselSection = () => {
         <CarouselContent>
           {Array.from({ length: 4 }).map((_, index) => (
             <CarouselItem key={index}>
-              {/* <div className="relative"> */}
-              {/* <section className="w-full h-full overflow-hidden">
-                  <img
-                    src={
-                      isDesktop
-                        ? `/images/carousel/${index + 1}.jpeg`
-                        : `/images/carousel/sm/${index + 1}.jpeg`
-                    }
-                    alt="carousel"
-                    className="w-full h-full object-fill"
-                  />
-
-                  <div className="absolute inset-0 bg-black opacity-30"></div>
-                </section>
-              </div> */}
               <div className="relative h-screen flex items-center justify-center">
                 <img
                   src={
