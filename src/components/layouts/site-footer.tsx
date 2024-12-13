@@ -8,68 +8,27 @@ import { Shell } from "@/components/shell";
 
 export function SiteFooter() {
   return (
-    <footer className="w-full border-t bg-background">
+    <footer className="w-full bg-background container mx-auto pt-10">
       <Shell>
-        <section className="flex flex-col gap-10 lg:flex-row lg:gap-20">
+        <section className="flex flex-col mb-16">
           <section>
-            <Link href="/" className="flex w-fit items-center space-x-2">
-              <Icons.logo className="size-6" aria-hidden="true" />
-              <span className="font-bold">{siteConfig.name}</span>
+            <Link href="/" className=" items-center space-x-2 flex">
+              <Icons.logo className="size-50" aria-hidden="true" />
               <span className="sr-only">Home</span>
             </Link>
-          </section>
-          <section className="grid flex-1 grid-cols-1 gap-10 xxs:grid-cols-2 sm:grid-cols-4">
-            {siteConfig.footerNav.map((item) => (
-              <div key={item.title} className="space-y-3">
-                <h4 className="text-base font-medium">{item.title}</h4>
-                <ul className="space-y-2.5">
-                  {item.items.map((link) => (
-                    <li key={link.title}>
-                      <Link
-                        href={link.href}
-                        target={link?.external ? "_blank" : undefined}
-                        rel={link?.external ? "noreferrer" : undefined}
-                        className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                      >
-                        {link.title}
-                        <span className="sr-only">{link.title}</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            <section className="mt-4">
+              <p className="text-xs">
+                주소 : 서울특별시 중구 수하동 67 미래에셋 센터원 ( 서울특별시
+                중구 을지로 5길 26 ) <br />
+                대표번호 : 02-6030-0100
+              </p>
+            </section>
           </section>
         </section>
         <section className="flex items-center space-x-4">
-          <div className="flex-1 text-left text-sm leading-loose text-muted-foreground">
-            Built by{" "}
-            <Link
-              href="https://twitter.com/sadmann17"
-              target="_blank"
-              rel="noreferrer"
-              className="font-semibold transition-colors hover:text-foreground"
-            >
-              Sadman
-              <span className="sr-only">Twitter</span>
-            </Link>
-            .
-          </div>
-          <div className="flex items-center space-x-1">
-            <Link
-              href={siteConfig.links.github}
-              target="_blank"
-              rel="noreferrer"
-              className={cn(
-                buttonVariants({
-                  size: "icon",
-                  variant: "ghost",
-                })
-              )}
-            >
-              <Icons.gitHub className="size-4" aria-hidden="true" />
-              <span className="sr-only">GitHub</span>
-            </Link>
+          <div className="flex-1 text-left text-xs leading-loose text-muted-foreground">
+            COPYRIGHT(C) 2011 MIRAE ASSET COPORATION. CO., Ltd. ALL RIGHT
+            RESERVED.
           </div>
         </section>
       </Shell>

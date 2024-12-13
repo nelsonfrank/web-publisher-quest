@@ -27,8 +27,6 @@ export function SiteHeader() {
         </picture>
 
         <div className="absolute inset-0 bg-black opacity-30"></div>
-
-        <div></div>
       </section>
       <div className="relative z-50 h-full text-red flex  flex-col justify-end pb-36 mx-8 lg:pb-0 lg:justify-center lg:container lg:mx-auto">
         <h1 className="text-6xl font-heading mb-8 flex flex-col text-white lg:text-9xl">
