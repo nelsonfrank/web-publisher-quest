@@ -48,7 +48,7 @@ export const CarouselSection = () => {
         ]}
       >
         <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
+          {Array.from({ length: 4 }).map((_, index) => (
             <CarouselItem key={index}>
               {/* <div className="relative"> */}
               {/* <section className="w-full h-full overflow-hidden">
@@ -109,19 +109,7 @@ export const CarouselSection = () => {
                 <button
                   className={cn(
                     "w-9 h-1  rounded-full focus:outline-none",
-                    count == index + 1 ? "bg-white" : "bg-gray-400"
-                  )}
-                ></button>
-                <button
-                  className={cn(
-                    "w-9 h-1 rounded-full focus:outline-none",
-                    count == index + 2 ? "bg-white" : "bg-gray-400"
-                  )}
-                ></button>
-                <button
-                  className={cn(
-                    "w-9 h-1 rounded-full focus:outline-none",
-                    count == index + 3 ? "bg-white" : "bg-gray-400"
+                    count == index + 5 ? "bg-white" : "bg-gray-400"
                   )}
                 ></button>
                 <button
@@ -133,7 +121,13 @@ export const CarouselSection = () => {
                 <button
                   className={cn(
                     "w-9 h-1 rounded-full focus:outline-none",
-                    count == index + 5 ? "bg-white" : "bg-gray-400"
+                    count == index + 3 ? "bg-white" : "bg-gray-400"
+                  )}
+                ></button>
+                <button
+                  className={cn(
+                    "w-9 h-1 rounded-full focus:outline-none",
+                    count == index + 2 ? "bg-white" : "bg-gray-400"
                   )}
                 ></button>
               </div>
