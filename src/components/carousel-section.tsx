@@ -61,14 +61,14 @@ export const CarouselSection = () => {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-start py-52 px-4 md:px-16">
-                  <h1 className="text-white text-3xl md:text-6xl font-bold flex flex-col  mb-40">
+                  <h1 className="text-white text-3xl md:text-6xl font-bold flex flex-col container mx-auto mb-40">
                     <span className="inline-flex ">
                       The <Icons.first className="size-20 ml-4 mr-2 -mt-4" />{" "}
                       Environment you
                     </span>
                     <span className="text-start">would imagine</span>
                   </h1>
-                  <div className="mt-4">
+                  <div className="mt-4 container mx-auto">
                     <Progress className="h-1 w-1/2 mb-3" />
                     <p className="text-white text-xs md:text-xl  mb-8">
                       서울 청계천은 자연 그대로의 휴식과 재충전 공간이며,
