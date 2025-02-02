@@ -8,7 +8,7 @@ import { GlobeIcon } from "@radix-ui/react-icons";
 
 export function MainNav() {
   return (
-    <div className="hidden gap-6 w-full lg:flex lg:justify-between lg:items-center my-6">
+    <div className="hidden w-full lg:flex lg:justify-between lg:items-center my-6">
       <div className="flex justify-center items-center gap-20">
         <Link href="/" className="hidden items-center lg:flex">
           <Icons.logo
@@ -35,7 +35,7 @@ export function MainNav() {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="mr-3">
         <GlobeIcon height={24} width={24} />
       </div>
     </div>
