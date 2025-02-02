@@ -2,6 +2,7 @@
 import { CARD_DATA, CONVENIENCE_DATA } from "@/assets/data";
 import { Card } from "@/components/card";
 import { CarouselSection } from "@/components/carousel-section";
+import { Icons } from "@/components/icons";
 import { cn } from "@/lib/utils";
 
 export default function Home() {
@@ -49,18 +50,18 @@ export default function Home() {
       <section>
         <CarouselSection />
       </section>
-      <div className="py-20 container mx-auto">
-        <section className="px-4">
+      <div className="py-[180px] container mx-auto">
+        <section className="">
           <div>
-            <div className="mb-16">
-              <h2 className="font-bold font-header text-2xl mb-4">
-                ONLY CENTER <sup>1</sup>
+            <div className="mb-40">
+              <h2 className="font-bold font-header text-5xl mb-4">
+                <Icons.onlyCenter className="" />
               </h2>
               <div className="flex flex-col md:flex-row md:items-center">
-                <p className="text-2xl font-body mb-4">
+                <p className="text-4xl font-body leading-9 tracking-widest mb-4">
                   미래에셋센터원에서만 누리는
                 </p>
-                <p className="font-bold font-header text-primary text-2xl mb-4 md:ml-2">
+                <p className="font-bold font-header leading-9 tracking-widest text-primary text-4xl  mb-4 md:ml-2">
                   특별한 혜택
                 </p>
               </div>
@@ -73,7 +74,7 @@ export default function Home() {
                   title={item.title}
                   description={item.description}
                   imgPath={item.imgPath}
-                  className={item.className}
+                  className={index === 0 ? "-mt-10" : ""}
                 />
               ))}
             </div>
