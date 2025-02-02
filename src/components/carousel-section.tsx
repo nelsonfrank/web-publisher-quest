@@ -20,7 +20,6 @@ import { cn } from "@/lib/utils";
 export const CarouselSection = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
-  const [count, setCount] = useState(0);
 
   const isDesktop = useMediaQuery("(min-width: 1024px)");
   useEffect(() => {
@@ -28,7 +27,6 @@ export const CarouselSection = () => {
       return;
     }
 
-    setCount(api.scrollSnapList().length);
     setCurrent(api.selectedScrollSnap() + 1);
 
     api.on("select", () => {
