@@ -25,29 +25,29 @@ export const CARD_DATA = [
 ];
 
 export const CONVENIENCE_DATA = [
-    
-                {title:"KF GALLERY",
-                description:"국내외 방문객에게 전시회, 문화 행사, 교육 프로그램들 개최 국제 교류를 촉진하는 다양한 전시와 행사에 참여해보세요.",
-                imgPath:"/images/kf-gallery.png",
-                hasProgressBar:true,
-                progressBarValue:50,
-                className:"md:pt-16 lg:pt-32"},
-              
-              
-                {title:"센터원 Wellness",
-                description:"피트니스, 골프GDR+, 필라테스, GX,스피닝, 사우나, PT(퍼스널트레이닝) 등 운영 바쁜 일상과 업무에서 잠시 휴식을 취해보세요.",
-                imgPath:"/images/wellness.png",
-                hasProgressBar:true,
-                progressBarValue:0,
-                className:"md:pt-8 lg:pt-16"},
-              
-              
-                {
-                title:"SPARKPLUS",
-                description:"원하는 인원만큼 사용할 수 있는 맞춤형 오피스 일에만 집중할 수 있는 완벽한 공유 오피스를 만나보세요.",
-                imgPath:"/images/sparkplus.png",
-                hasProgressBar: true,
-                progressBarValue:0,
-                className:""
-            }
-]
+  {
+    title: "KF GALLERY",
+    description:
+      "국내외 방문객에게 전시회, 문화 행사, 교육 프로그램들 개최 국제 교류를 촉진하는 다양한 전시와 행사에 참여해보세요.",
+    imgPath: "/images/kf-gallery.png",
+    hasProgressBar: true,
+    progressBarValue: 56,
+  },
+
+  {
+    title: "센터원 Wellness",
+    description: `피트니스, 골프GDR+, 필라테스, GX,스피닝, 사우나, PT(퍼스널\n트레이닝) 등 운영\n 바쁜 일상과 업무에서 잠시 휴식을 취해보세요.`,
+    imgPath: "/images/wellness.png",
+    hasProgressBar: true,
+    progressBarValue: 0,
+  },
+
+  {
+    title: "SPARKPLUS",
+    description:
+      "원하는 인원만큼 사용할 수 있는 맞춤형 오피스일에만 집중할 수 있는 완벽한 공유 오피스를 만나보세요.",
+    imgPath: "/images/sparkplus.png",
+    hasProgressBar: true,
+    progressBarValue: 0,
+  },
+];

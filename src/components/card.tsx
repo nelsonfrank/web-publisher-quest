@@ -21,29 +21,35 @@ export const Card = (props: CardProps) => {
     className,
   } = props;
   return (
-    <div className={cn("text-white mb-16 overflow-hidden", className)}>
-      <div className="relative mb-4">
-        {/* <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-gray-900 to-transparent opacity-50"></div> */}
-        <img src={imgPath} alt="Gallery" className="w-full h-56 object-cover" />
-      </div>
-      <div className="py-6">
+    <div
+      className={cn(
+        "flex flex-col flex-grow-0 gap-6 self-stretch pb-10 h-[500px] w-[498.7px]",
+        className
+      )}
+    >
+      <img
+        src={imgPath}
+        alt="Gallery"
+        className="w-[499px] h-[300px] object-fill"
+      />
+      <div className="py-4">
         <h3
           className={cn(
-            "text-4xl font-bold mb-4 font-heading capitalize",
+            "text-4xl font-bold mb-4 font-heading capitalize leading-[1.1] tracking-wider",
             progressBarValue > 0 ? "text-primary" : ""
           )}
         >
           {/*  */}
           {title}
         </h3>
-        <p className="text-secondary mb-4 text-lg text-left tracking-widest leading-7 hover:text-white">
+        <p className="text-secondary text-xl text-left -tracking-[0.2px] leading-[1.6] hover:text-white">
           {/*  */}
           {description}
         </p>
       </div>
       {hasProgressBar && (
         <div>
-          <Progress value={progressBarValue} className="h-1.5 rounded-none" />
+          <Progress value={progressBarValue} className="h-1 rounded-none" />
         </div>
       )}
     </div>
