@@ -32,7 +32,7 @@ export function SiteHeader() {
         <h1 className="text-[180px] font-heading mb-8 flex flex-col text-white lg:text-9xl">
           <span className="inline-flex mb-2 tracking-tight text-[143px] ">
             THE{" "}
-            <Icons.first className="ml-4 lg:ml-[3.52rem] lg:w-[145px] lg:h-[145px] lg:-mt-3.5" />
+            <Icons.firstLogo className="ml-4 lg:ml-[3.52rem] lg:w-[145px] lg:h-[145px] lg:-mt-3.5" />
           </span>
           <span className="leading-[1.14] tracking-tight text-[143px]">
             BUILDING
