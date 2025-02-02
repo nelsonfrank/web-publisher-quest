@@ -59,7 +59,7 @@ export const CarouselSection = () => {
                   className="absolute inset-0 w-full h-full object-fill"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-start py-[280px] px-4 md:px-16">
-                  <h1 className=" text-white text-3xl md:text-[80px] -tracking-[0.8px] leading-none font-bold flex flex-col container mx-auto mb-[280px]">
+                  <h1 className=" font-heading text-white text-3xl md:text-[80px] -tracking-[1px] leading-none font-bold flex flex-col container mx-auto mb-[280px]">
                     <span className="inline-flex ">
                       The <Icons.first className="size-24 ml-8 -mt-4" />{" "}
                       Environment you
@@ -71,7 +71,7 @@ export const CarouselSection = () => {
                       value={50}
                       className="h-[4px] w-[1043px] mb-4 text-white"
                     />
-                    <p className="text-white md:font-bold text-xs md:text-xl  mb-9 md:leading-8 md:-tracking-[0.2px]">
+                    <p className="font-body text-white md:font-bold text-xs md:text-xl  mb-9 md:leading-8 md:-tracking-[0.2px]">
                       서울 청계천은 자연 그대로의 휴식과 재충전 공간이며,
                       점심시간과 퇴근길에 만나는 청계천의 여유로움은 <br />
                       CENTER1 입주자 및 이용객이 누릴 수 있는 특권입니다. <br />

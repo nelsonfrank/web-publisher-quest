@@ -51,6 +51,8 @@ export default {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+        "main-blue": "#00427a",
+        "main-gray": "#979797",
       },
       fontFamily: {
         heading: ["var(--font-heading)", ...fontFamily.sans],

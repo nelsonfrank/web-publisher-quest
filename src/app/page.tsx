@@ -58,10 +58,10 @@ export default function Home() {
                 <Icons.onlyCenter className="" />
               </h2>
               <div className="flex flex-col md:flex-row md:items-center">
-                <p className="text-4xl font-body leading-9 tracking-widest mb-4">
+                <p className="text-4xl font-heading leading-9 tracking-widest mb-4">
                   미래에셋센터원에서만 누리는
                 </p>
-                <p className="font-bold font-header leading-9 tracking-widest text-primary text-4xl  mb-4 md:ml-2">
+                <p className="font-bold font-heading leading-9 tracking-widest text-primary text-4xl  mb-4 md:ml-2">
                   특별한 혜택
                 </p>
               </div>
@@ -81,6 +81,70 @@ export default function Home() {
           </div>
         </section>
       </div>
+      <section className="h-screen bg-white text-black py-40">
+        <div className="container mx-auto flex gap-[60px]">
+          <div className="w-1/2 py-5 ">
+            <div className="flex items-center justify-between w-full">
+              <h2 className="font-heading text-[40px] font-bold leading-[64px] -tracking-[0.56px]">
+                지금 살펴봐야할 이벤트
+              </h2>
+              <div>
+                <Icons.add />
+              </div>
+            </div>
+            <div className="mt-12">
+              <img
+                src="/images/section-2/first.png"
+                alt="slider"
+                className="mb-6"
+              />
+              <div>
+                <h3 className="text-[32px] font-bold font-heading leading-[48px] -tracking-[0.32px]">
+                  미래에셋센터원 크리스마스 작은 음악회
+                </h3>
+                <ul className="list-disc pl-8 text-main-gray text-xl mb-6 font-body">
+                  <li>공연 주제 : 재즈 공연</li>
+                  <li>
+                    장소 : 1층 계단 앞(연주), 1층 크리스마스 트리 앞(다과 및
+                    커피 배포)
+                  </li>
+                </ul>
+                <p className="text-main-gray text-lg leading-7 -tracking-[0.18px]">
+                  2024.12.20(금)~2024.12.20(금)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="w-1/2 py-5 ">
+            <div className="flex items-center justify-between w-full">
+              <h2 className="text-[40px] font-bold leading-[64px] -tracking-[0.56px]">
+                센터원 소식
+              </h2>
+              <div>
+                <Icons.add />
+              </div>
+            </div>
+            <div className="mt-12">
+              <img src="" alt="" />
+              <div>
+                <h3 className="text-[28px] leading-[45px] -tracking-[0.28px] font-bold text-main-blue">
+                  미래에셋센터원 홈페이지 리뉴얼 안내
+                </h3>
+                <p className="font-body text-xl leading-8 -tracking-[0.2px] text-main-blue mb-5">
+                  미래에셋센터원 공식 홈페이지가 리뉴얼 오픈했습니다. 더 나은
+                  서비스 제공을 위해 불편한...
+                </p>
+                <p className="text-base leading-7 -tracking-[0.16px] text-main-blue">
+                  2024.09.04(수)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="h-screen py-40">
+        <div></div>
+      </section>
       <section>
         <div className="relative w-full h-[75vh]">
           {/* Background Image */}

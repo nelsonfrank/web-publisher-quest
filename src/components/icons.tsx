@@ -486,6 +486,24 @@ export const Icons = {
       />
     </svg>
   ),
+  add: (props: IconProps) => (
+    <svg
+      width="36"
+      height="36"
+      viewBox="0 0 36 36"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M18 11.5883V24.3883M11.6 17.9883H24.4M34 17.9883C34 26.8248 26.8366 33.9883 18 33.9883C9.16344 33.9883 2 26.8248 2 17.9883C2 9.15173 9.16344 1.98828 18 1.98828C26.8366 1.98828 34 9.15173 34 17.9883Z"
+        stroke="#00427A"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  ),
   dashboard: HomeIcon,
   avatar: AvatarIcon,
   placeholder: ImageIcon,
